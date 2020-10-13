@@ -1,0 +1,18 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "This is a project in apis and microservices on freecodecamp",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "lvhien1505",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
