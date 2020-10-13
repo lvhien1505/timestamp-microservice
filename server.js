@@ -5,6 +5,10 @@ env.config();
 
 const app = express();
 
+
+app.get("/",(req,res)=>{
+      res.sendFile(__dirname + "/views/index.html");
+})
 app.get("/api/timestamp", (req, res) => {
   const unix =Date.now();
   const utc = Date();
@@ -26,7 +30,7 @@ app.get("/api/timestamp/:time_str", (req, res) => {
   }
 
   let checkDate = new Date(timeStr);
-  console.log(checkDate)
+  
   if (checkDate.toString() === "Invalid Date") {
     return res.json({ error: "Invaid Date" });
   } else {
